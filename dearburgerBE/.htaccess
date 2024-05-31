@@ -1,0 +1,13 @@
+DirectoryIndex /public/index.php
+RewriteEngine on
+
+# Exclude requests for existing files in the public directory from rewriting
+RewriteCond %{REQUEST_URI} !^/public/
+
+# Rewrite all other requests to the public directory
+RewriteRule ^(.*)$ /public/$1 [L]
+
+# If the requested file or directory does not exist, route through index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /public/index.php/$1 [L,QSA]
