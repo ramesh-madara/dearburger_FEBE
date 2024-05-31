@@ -1,0 +1,53 @@
+body,
+html {
+  overflow-x: hidden !important;
+  background-color: rgb(163, 163, 163);
+  
+}
+
+.NavContainer {
+  position: fixed;
+}
+
+:root {
+  --primary-color: #ff2a77;
+  --secondary-color: #104b24;
+  --darkblue-bg-color: #33047f;
+  --accent-color: #f2f2f2;
+  --accent-dark-color: #d9d9d9;
+}
+
+/* Style the scrollbar itself */
+::-webkit-scrollbar {
+  /* width: 0px; */
+  display: none;
+}
+
+/* Style the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  /* transition: 0.5s; */
+  /* background-color: var(--secondary-color); */
+  /* border-radius: 10px; */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  transition: 0.5s;
+  /* background-color: var(--primary-color); */
+  border-radius: 10px;
+}
+
+/* Style the scrollbar track */
+::-webkit-scrollbar-track {
+  /* background-color: var(--darkblue-bg-color); */
+}
+
+/* Style the scrollbar buttons */
+::-webkit-scrollbar-button {
+  display: none;
+  /* Hide the scrollbar buttons */
+}
+
+/* Style the scrollbar corner */
+::-webkit-scrollbar-corner {
+  background-color: #f0f0f0;
+}

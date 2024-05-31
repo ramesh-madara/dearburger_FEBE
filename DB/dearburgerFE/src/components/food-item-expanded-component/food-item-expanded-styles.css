@@ -1,0 +1,130 @@
+.expanded-item-shadow {
+  background-color: #00000079;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* backdrop-filter: blur(1px); */
+}
+
+.addon-button:focus,
+.addon-button:active {
+  outline: none;
+}
+.expaned-item {
+  display: flex;
+  justify-content: center;
+  /* width: 40vw; */
+  max-width: 60vw;
+  border-radius: 10px;
+  background-color: #ffffff;
+  padding: 15px;
+}
+.expaned-item-inner {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.food-item-expanded-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 40%;
+  flex-grow: 1;
+  min-width: 160px;
+  padding: 13px 11px;
+  background-color: var(--White, #fff);
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+  border-radius: 10px;
+}
+.customization {
+  width: 60%;
+  background-color: #ffffffa1;
+  border-radius: 10px;
+  padding: 10px;
+}
+.closeBtn {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -10px;
+}
+
+.food-item-expanded-image {
+  width: 100%;
+  aspect-ratio: 1.28;
+  object-fit: cover;
+  object-position: center;
+}
+
+.food-item-expanded-name {
+  font: 17px Sansita One, sans-serif;
+  font-weight: 700;
+  margin: 6px 0px 1px 0px;
+  color: var(--Main-Green, #104b24);
+}
+
+.food-item-expanded-description {
+  font: 500 12px Poppins, sans-serif;
+  color: var(--Main-Green, #104b24);
+  margin: 1px 0px 1px 0px;
+}
+
+.food-item-expanded-price {
+  font-family: PoetsenOne, sans-serif;
+  margin: 0px 0px 1px 0px;
+  color: #f13e3e;
+}
+
+.quantity-control-expanded {
+  display: flex;
+  justify-content: center;
+  width: 95px;
+  gap: 0px;
+  color: var(--White, #fff);
+  white-space: nowrap;
+  background-color: #ffcc6a;
+}
+
+.decrement-button-expanded,
+.increment-button-expanded {
+  font-family: PoetsenOne, sans-serif;
+  border: 1px solid rgba(16, 75, 36, 1);
+  background-color: var(--Main-Green, #104b24);
+  padding: 2px 2px;
+  flex-grow: 1;
+}
+
+.decrement-button-expanded {
+  border-radius: 4px 0 0 4px;
+}
+
+.increment-button-expanded {
+  border-radius: 0 4px 4px 0;
+}
+
+.quantity {
+  font-family: PoetsenOne, sans-serif;
+  border: 1px solid rgba(16, 75, 36, 1);
+  background-color: var(--White, #fff);
+  color: var(--bg-overlay, #000);
+  padding: 5px 12px;
+}
+
+.add-to-cart-button-expanded {
+  font-family: PoetsenOne, sans-serif;
+  justify-content: center;
+  border-radius: 12px;
+  background-color: var(--Main-Green, #104b24);
+  margin-top: 6px;
+  width: 95px;
+  color: var(--Primary-Yellow, #ffcc6a);
+  padding: 2px 16px;
+}

@@ -1,0 +1,209 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap');
+
+
+#cOuter {
+  position: fixed;
+  background-color: rgb(226, 226, 226);
+  /* background-color: rgb(39, 90, 73); */
+  height: 100vh;
+  width: calc(25% - 10px);
+  right: 0px;
+  top: 80px;
+  overflow-y:scroll !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  padding: 5px 5px 5px 5px;
+  box-shadow: -3px 3px 5px rgba(0, 0, 0, 0.178);
+}
+
+
+
+/*
+#cartItems {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 500px;
+}*/
+.Actions {
+  background-color: brown;
+  width: 100%;
+}
+@media only screen and (max-width: 750px) {
+  #cOuter {
+    top: 80px;
+    width: 80vw;
+    overflow-y:auto !important;
+  }
+  .showCartMob {
+    right: 0px !important;
+    transition: 200ms;
+  }
+  .hideCartMob {
+    transition: 200ms;
+    right: -90vw !important;
+  }
+
+  .c-container {
+    max-height: 150px;
+  }
+
+}
+
+
+.cart-divider {
+  border-top: 1px solid #888;
+  margin: 15px 0;
+  font-weight: bold;
+}
+
+
+
+.c-container {
+  overflow-x: hidden !important; /* Hide horizontal scrollbar if not needed */
+  max-height: 30%;
+  overflow-y: scroll;
+  width: 90%;
+  border: 1px  #555;
+  padding: 10px;
+  background-color:#f1f1f1;
+  border-radius: 10px;
+  box-shadow: -3px 3px 5px rgba(0, 0, 0, 0.178);
+
+
+}
+
+/* Customize scrollbar for WebKit browsers (Chrome and Edge) */
+.c-container::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
+}
+
+/* Track */
+.c-container::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Color of the track */
+}
+
+/* Handle */
+.c-container::-webkit-scrollbar-thumb {
+  background: #888; /* Color of the scrollbar handle */
+}
+
+/* Handle on hover */
+.c-container::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Color of the scrollbar handle on hover */
+}
+
+
+/* Force the scrollbar to be always visible for Firefox */
+.c-container {
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: #888 #f1f1f1; /* For Firefox */
+}
+
+
+
+.delivery-options {
+  margin-top: 10px; /* Add space between the radio buttons and the cart container */
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+
+@media(max-width:1000px) {
+
+  .delivery-options {
+    flex-wrap: wrap;
+    justify-content:space-around;
+    margin-bottom: -20px;
+  }
+  #rad{
+    margin: 2px 0px 5px 0px !important;
+  }
+}
+
+@media(max-width:363px) {
+
+  #rad{
+    margin: -5px 0px 10px 0px !important;
+  }
+  .c-container {
+    max-height: 100px;
+  }
+
+  .delivery-options {
+    flex-wrap: wrap;
+    justify-content:space-around;
+    margin-bottom: -30px;
+  }
+
+
+
+}
+
+
+
+
+#rad{
+font-size: 12pt;
+font-family: "Sansita", sans-serif;
+font-weight: 500;
+width: 97px;
+height: fit-content;
+outline: none;
+margin: 0px 4px 0px 4px;
+background-color:#B9D2D2 ;
+color: black;
+border: 1px solid;
+}
+
+#rad:hover{
+  background-color: #00AD7C;
+  color: white;
+}
+
+.selected-btn{
+  background-color: #00AD7C !important;
+  color: #004225;
+  color: white !important;
+  border: 1px solid #00AD7C !important;
+}
+
+
+.delivery-options .ant-radio-button-wrapper {
+  margin-right: 10px; /* Add space between the radio buttons */
+}
+
+.btnOrder{
+  width: 80%;
+  margin-top:20px;
+  height: 40px;
+  background-color: #21BF73;
+  font-family:'Roboto','San-serif';
+  font-size: 20px;
+  font-weight: bold;
+  border: 1px solid #004225;
+  border-radius: 8px;
+  outline:none !important;
+}
+
+.btnOrder:hover{
+  background-color: #009378 !important;
+}
+
+#sub{
+  font-size: 15pt;
+  color:black;
+  font-family:"Roboto";
+  font-weight: 800;
+  margin-top: 10px;
+  color:#004225;
+
+}

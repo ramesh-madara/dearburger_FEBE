@@ -1,0 +1,249 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap');
+
+/* Checkout-styles.css */
+
+/* Modal Wrapper */
+.modal-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Shadow effect */
+ 
+}
+
+/* Modal */
+.modal-c {
+  position: relative;
+  background-color:white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Shadow effect */
+  padding: 20px;
+  max-width: 600px; /* Adjust the width as needed */
+  width: 100%;
+  height: 400px;
+  overflow-y:scroll; /* Hide overflowing content */
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: #888 #f1f1f1; /* For Firefox */
+  z-index: 999 !important;
+
+}
+
+/* Modal Header */
+.checkout-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Modal Content */
+.checkout-content {
+  position: relative;
+  margin:10px;
+  height: 200px;
+  overflow-y:scroll !important; /* Enable vertical scrolling if content exceeds max height */
+  background-color:#F1FDF3;
+  border-radius: 8px;
+  border: 1px solid;
+  border-color: #16C79A;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+
+
+
+.checkout-content::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
+}
+
+/* Track */
+.checkout-content::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Color of the track */
+}
+
+/* Handle */
+.checkout-content::-webkit-scrollbar-thumb {
+  background: #888; /* Color of the scrollbar handle */
+}
+
+/* Handle on hover */
+.checkout-content::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Color of the scrollbar handle on hover */
+}
+.checkout-content {
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: #888 #f1f1f1; /* For Firefox */
+}
+
+/* Modal Total */
+.checkout-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* Close Button */
+.close-bt{
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  color: #999;
+  font-size: 15pt;
+  padding: 8px;
+}
+
+.close-bt:hover {
+  color:black;
+}
+
+.food{
+  overflow-y: scroll;
+}
+tr{
+  text-align:left;
+  
+}
+td{
+  padding-left: 5px;
+}
+
+
+.proceed{
+ background-color:#09b489;
+ font-weight: bold;
+ color: white;
+ width:80px;
+ height: 40px;
+
+}
+
+.colex{
+  border: 1px solid;
+  margin-right:10px;
+  background-color: #9be9c3;
+}
+
+.colext{
+font-family: 'Roboto';
+font-weight: 600;
+font-size: 15pt;
+
+
+}
+
+
+.saved{
+  background-color:#09b489;
+  font-weight: bold;
+  color: white;
+
+  height: 40px;
+  
+  
+}
+.cancel{
+  background-color:#FD5E53;
+  font-weight: bold;
+ color: white;
+
+ height: 40px;
+}
+
+.tot{
+ overflow: hidden;
+z-index: 1;
+}
+
+.hbtn{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-content:space-evenly;
+  align-items: space-evenly;
+  flex-wrap: nowrap;
+  gap: 10px;
+
+}
+
+.add-new{
+  background-color:teal;
+  font-weight: bold;
+ color: white;
+
+ height: 40px;
+}
+
+.tot{
+  background-color:#21BF73;
+  font-size: 15pt;
+  color: white;
+}
+
+.msg{
+  font-size: 15pt;
+  font-family:sans-serif;
+  text-align: center;
+  
+}
+
+.navhold{
+  background-color:#F6E9B2;
+  color:black;
+  font-weight: bold;
+  font-size: 12pt;
+}
+.navhold:hover{
+  background-color: #F3CA52;
+}
+
+@media (max-width: 600px) { 
+  .navhold{
+    width:100px;
+    font-size: 11pt;
+    height: 40px;
+     margin: 20px;
+     padding:0px;
+
+  }
+
+  .iname{
+    white-space: nowrap;
+    padding-right: 25px;
+  }
+  .modal-wrapper{
+    margin-top: 100px;
+  }
+  
+}
+
+.idelete{
+  background-color: #df817a;
+  font-weight: bolder !important;
+  outline: none !important;
+}
+
+.idelete:hover{
+  background-color: #f5584d !important;
+  color: black !important;
+}
+
+
+
+
+
+
+
+
+
+
+

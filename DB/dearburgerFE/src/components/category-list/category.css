@@ -1,0 +1,50 @@
+.clist{
+
+display: flex;
+flex-direction: row;
+width:fit-content;
+padding: 10px;
+
+}
+
+.category-list{
+    display: flex;
+    flex-direction: row;  
+}
+
+.clist.selected button {
+    background-color: transparent; /* Remove background color */
+    color: #104B24; /* Change text color */
+    border: 2px solid;
+    font-weight: bold;
+    border-radius: 25px;  
+  }
+
+  .cat_select{
+    background-color:#104B24;
+    color:#FFCC6A;
+    border: 1px solid #104B24;
+    outline:none !important; 
+    border-radius: 25px;
+    width: 100px;
+
+  }
+
+  .cat_select:hover {
+    background-color: transparent; /* Remove background color */
+    color: #104B24 !important; /* Change text color */
+    border: 2px solid #104B24 !important ;
+    font-weight: bold;
+
+  }
+
+  @media only screen and (max-width: 1309px) {
+    .category-list{
+        display: flex;
+        flex-direction: row; 
+        justify-content:flex-start;
+        flex-wrap: wrap; 
+    }
+  }
+
+  

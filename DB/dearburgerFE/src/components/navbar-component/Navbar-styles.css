@@ -1,0 +1,57 @@
+:root {
+  --primary-color: #ff2a77;
+  --secondary-color: #104b24;
+  --darkblue-bg-color: #33047f;
+  --darkerblue-bg-color: #1e0241e0;
+  --accent-color: #f2f2f2;
+  --accent-dark-color: #d9d9d9;
+}
+
+.navOuter {
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  border: none;
+  align-items: first baseline;
+  padding-left: 0px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: 0.35s;
+}
+.navPhase_1 {
+  background-color: var(--secondary-color);
+  /* background-color: rgb(255, 255, 255); */
+  transition: 0.35s;
+}
+.navPhase_2 {
+  background-color: var(--darkerblue-bg-color);
+  transition: 0.35s;
+  backdrop-filter: blur(5px);
+}
+.navItems {
+  display: flex;
+  justify-content: space-between;
+  align-items: first baseline;
+  background-color: rgba(105, 18, 18, 0);
+  width: 100%;
+  padding: 0px 50px 0px 50px;
+}
+.red {
+  background-color: rgb(19, 31, 84);
+  height: 100vh;
+}
+
+@media only screen and (max-width: 750px) {
+  .menu-btn {
+    display: none;
+  }
+  .nav-links {
+    /* display: flex;
+        justify-content: flex-end;
+        background-color: #007bff; */
+  }
+  .navItems {
+    padding: 0vw 10vw 0vw 10vw;
+  }
+}

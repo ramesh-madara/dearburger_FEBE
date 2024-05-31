@@ -1,0 +1,102 @@
+.food-item-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 256px;
+  min-width: 160px;
+  padding: 13px 11px;
+  background-color: var(--White, #fff);
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.315);
+}
+
+.food-item-image {
+  width: 100%;
+  aspect-ratio: 1.28;
+  object-fit: cover;
+  object-position: center;
+}
+
+.food-item-name {
+  font: 17px Sansita One, sans-serif;
+  font-weight: 700;
+  margin: 6px 0px 1px 0px;
+  color: var(--Main-Green, #104b24);
+}
+
+.food-item-description {
+  font: 500 12px Poppins, sans-serif;
+  color: var(--Main-Green, #104b24);
+  margin: 1px 0px 1px 0px;
+}
+
+.food-item-price {
+  font-family: PoetsenOne, sans-serif;
+  margin: 0px 0px 1px 0px;
+  color: #f13e3e;
+}
+
+.item-quantity-control {
+  display: flex;
+  justify-content: center;
+  min-width: 100px;
+  gap: 0px;
+  color: var(--White, #fff);
+  white-space: nowrap;
+}
+
+.customize-button,
+.increment-button {
+  font-family: PoetsenOne, sans-serif;
+  border: 1px solid rgba(16, 75, 36, 1);
+  background-color: var(--Main-Green, #104b24);
+  padding: 2px 2px;
+  flex-grow: 1;
+}
+
+.customize-button {
+  border-radius: 12px;
+  font-weight: bold;
+  border: solid 3px #ffffff00;
+  transition: 0.2s;
+}
+
+.increment-button {
+  border-radius: 0 4px 4px 0;
+}
+
+.quantity {
+  font-family: PoetsenOne, sans-serif;
+  border: 1px solid rgba(16, 75, 36, 1);
+  background-color: var(--White, #fff);
+  color: var(--bg-overlay, #000);
+  padding: 5px 12px;
+}
+
+.item-add-to-cart-button {
+  font-family: PoetsenOne, sans-serif;
+  justify-content: center;
+  border-radius: 12px;
+  background-color: var(--Main-Green, #104b24);
+  margin-top: 6px;
+  min-width: 100px;
+  color: var(--Primary-Yellow, #ffcc6a);
+  padding: 2px 16px;
+  font-weight: bold;
+  border: solid 3px #ffffff00;
+  transition: 0.2s;
+}
+.customize-button:hover {
+  border: solid 3px #104b24;
+  background-color: white;
+  color: #104b24;
+}
+.item-add-to-cart-button:hover {
+  border: solid 3px #104b24;
+  background-color: #ffcc6a;
+  color: #104b24;
+}

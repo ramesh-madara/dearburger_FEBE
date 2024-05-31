@@ -1,0 +1,43 @@
+#cartOuter {
+  position: fixed;
+  background-color: rgb(226, 226, 226);
+  /* background-color: rgb(39, 90, 73); */
+  height: 100vh;
+  width: calc(25% - 10px);
+  right: 0px;
+  top: 80px;
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  padding: 5px 5px 5px 5px;
+  box-shadow: -3px 3px 5px rgba(0, 0, 0, 0.178);
+}
+#cartItems {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 500px;
+}
+.Actions {
+  background-color: brown;
+  width: 100%;
+}
+@media only screen and (max-width: 750px) {
+  #cartOuter {
+    top: 80px;
+    width: 80vw;
+  }
+  .showCartMobile {
+    right: 0px !important;
+    transition: 200ms;
+  }
+  .hideCartMobile {
+    transition: 200ms;
+    right: -90vw !important;
+  }
+}

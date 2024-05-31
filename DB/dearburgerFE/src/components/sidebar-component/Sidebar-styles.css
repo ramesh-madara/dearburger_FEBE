@@ -1,0 +1,86 @@
+/* :root {
+    --primary-color: #FF2A77;
+    --secondary-color: #104B24;
+    --darkblue-bg-color: #33047F;
+    --accent-color: #F2F2F2;
+    --accent-dark-color: #D9D9D9;
+} */
+
+.sidebar-outer {
+  color: var(--accent-color);
+  position: fixed;
+  width: 96vw;
+  height: 100vh;
+  margin-top: 0px;
+  z-index: 1000;
+  box-shadow: 30px 0px 20px rgba(0, 0, 0, 0.49);
+  left: 0px;
+  top: 0px;
+  transition: 0.45s;
+  /* opacity: 0.9; */
+  /* backdrop-filter: blur(5px); */
+}
+
+.sidebar-hide {
+  left: -4000px;
+  visibility: hidden;
+}
+
+.sidebar-view {
+  left: 0px;
+}
+
+.sideMenuItems {
+  height: 56vh;
+  padding-top: 10vh;
+}
+
+.sideMenuItems .sideMenuItem {
+  font-size: 8vw;
+  height: 7vh;
+}
+
+.sideMenuItems .sideMenuItem:hover {
+  color: var(--darkblue-bg-color) !important;
+  padding-left: 20px;
+}
+
+.sideMenuSocials {
+  height: 28vh;
+  /* background-color: #33047F; */
+}
+
+.sideMenuSocials .sideMenuSocial {
+  font-size: 6vw;
+}
+
+.eeBtn {
+  display: none;
+}
+
+.sideMenuSocials .sideMenuSocial:hover {
+  color: var(--darkblue-bg-color) !important;
+  padding-left: 20px;
+}
+
+.closeSideMenuBtnOuter {
+  display: flex;
+  /* background-color: #FF2A77; */
+  justify-content: flex-end;
+  padding: 25px;
+}
+
+.closeSideMenuBtnOuter svg {
+  height: 30px;
+}
+
+/* .text-white.sideMenuSocial:hover .eeBtn {
+    display: inline; 
+  } */
+
+@media only screen and (max-width: 1000px) {
+  .sidebar-hide {
+    left: -4000px;
+    visibility: visible;
+  }
+}

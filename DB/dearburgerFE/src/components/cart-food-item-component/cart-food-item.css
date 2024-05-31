@@ -1,0 +1,128 @@
+.cart-food-item-card {
+  display: flex;
+  position: relative;
+  /* flex-direction: column; */
+  align-items: flex-start;
+  justify-content: left;
+  gap: 5px;
+  /* width: 95%; */
+  padding: 13px 11px;
+  background-color: var(--White, #fff);
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 400;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.308);
+}
+
+.cart-food-item-image {
+  width: 30%;
+  aspect-ratio: 1.28;
+  object-fit: cover;
+  object-position: center;
+  /* background-color: #104b24; */
+}
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px;
+}
+.sizefeature {
+  background-color: #1d911936;
+  border: solid 1px #1d911969;
+}
+.addonfeature {
+  background-color: #e2700536;
+  border: solid 1px #e27005a4;
+}
+.feature {
+  padding: 1px 7px;
+  border-radius: 3px;
+  margin: 0px;
+}
+
+.cart-food-item-name {
+  font: 17px Sansita Swashed, sans-serif;
+  font-weight: 700;
+  margin: 6px 0px 1px 0px;
+  color: var(--Main-Green, #104b24);
+  margin: 0px 0px 5px 0px;
+}
+
+.cart-food-item-description {
+  font: 500 12px Poppins, sans-serif;
+  color: var(--Main-Green, #104b24);
+  margin: 1px 0px 1px 0px;
+}
+
+.cart-food-item-price {
+  font-family: PoetsenOne, sans-serif;
+  margin: 0px 0px 1px 0px;
+  color: #f13e3e;
+}
+
+.quantity-control {
+  display: flex;
+  justify-content: center;
+  width: 95px;
+  gap: 0px;
+  color: var(--White, #fff);
+  white-space: nowrap;
+  background-color: #ffcc6a;
+}
+
+.decrement-button,
+.increment-button {
+  font-family: PoetsenOne, sans-serif;
+  border: 1px solid rgba(16, 75, 36, 1);
+  background-color: var(--Main-Green, #104b24);
+  padding: 2px 2px;
+  flex-grow: 1;
+}
+
+.decrement-button {
+  border-radius: 4px 0 0 4px;
+}
+
+.increment-button {
+  border-radius: 0 4px 4px 0;
+}
+
+.quantity {
+  font-family: PoetsenOne, sans-serif;
+  border: 1px solid rgba(16, 75, 36, 1);
+  background-color: var(--White, #fff);
+  color: var(--bg-overlay, #000);
+  padding: 5px 12px;
+}
+
+.add-to-cart-button {
+  font-family: PoetsenOne, sans-serif;
+  justify-content: center;
+  border-radius: 12px;
+  background-color: var(--Main-Green, #104b24);
+  margin-top: 6px;
+  width: 95px;
+  color: var(--Primary-Yellow, #ffcc6a);
+  padding: 2px 16px;
+}
+
+.cartclose{
+  background-color: rgb(243, 142, 124);
+  display: flex;
+  flex-direction: column;
+  right: 0;
+bottom: 0;
+  position: absolute;
+  font-weight:bolder;
+}
+
+.cartclose:hover{
+  background-color: rgb(250, 97, 70) !important;
+  color:black !important;
+}
+@media only screen and (min-width: 751px) and (max-width: 921px) {
+  .cartclose{
+      left: 0;;
+  }
+ 
+}

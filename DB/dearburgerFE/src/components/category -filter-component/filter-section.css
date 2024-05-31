@@ -1,0 +1,30 @@
+.filter-section {
+  display: flex;
+   flex-wrap: wrap; 
+  justify-content:flex-start;
+  gap: 20px;
+  width:auto;
+  padding: 20px 5px;
+  overflow-x: scroll;
+
+
+}
+
+@media only screen and (max-width: 1587px) {
+  .body {
+    overflow-x: scroll;
+  }
+  .filter-section {
+    flex-wrap: wrap;
+    overflow-x: hidden;
+    justify-content:space-evenly;
+    -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
+  }
+}
+
+@media (max-width:500px) {
+  .nores {
+   padding: 5px;
+ 
+  }
+}

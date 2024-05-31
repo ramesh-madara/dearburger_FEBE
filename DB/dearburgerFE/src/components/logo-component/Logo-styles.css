@@ -1,0 +1,18 @@
+.logoOuter {
+  display: flex;
+  /* background-color: rgba(127, 255, 212, 0.109); */
+  /* padding: 0px 10px 0px 10px; */
+}
+
+.on {
+  color: #ffffff;
+}
+.terra {
+  color: #ffffff;
+}
+.logoTxt {
+  font-size: 2rem;
+}
+a {
+  text-decoration: none;
+}

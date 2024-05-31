@@ -1,0 +1,64 @@
+.sidebarToggleBtn,
+.cartToggleBtn {
+  visibility: hidden;
+  width: 0px;
+}
+.cartCount {
+  position: absolute;
+  background-color: #f13e3e;
+  color: white;
+  border: solid 1px white;
+  font-weight: 600;
+  font-size: 0.77rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 15px;
+  min-width: 15px;
+  padding: 3px 3px;
+  border-radius: 50%;
+  top: -8px;
+  right: -10px;
+  box-shadow: 1px 2px 7px rgba(0, 0, 0, 0.274);
+  user-select: none; /* standard  */
+  -moz-user-select: none; /* firefox */
+  -ms-user-select: none; /* edge */
+  -webkit-user-select: none; /* safari */
+}
+.cartCount span {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 2px;
+}
+.cartCounterContainer {
+  position: relative;
+  display: inline-block;
+}
+
+@media only screen and (max-width: 750px) {
+  .sidebarToggleBtn,
+  .cartToggleBtn {
+    visibility: visible;
+    width: 40px;
+    height: 40px;
+    fill: rgb(255, 255, 255);
+    /* fill: rgb(39, 90, 73); */
+  }
+  .sidebarToggleBtn path {
+    position: absolute;
+    right: 0px;
+  }
+  .menu-btn {
+    display: none;
+  }
+  .nav-links {
+    display: flex;
+    align-items: center;
+  }
+  .navItems {
+    padding: 0vw 10vw 0vw 10vw;
+    align-items: center;
+  }
+}
+
+
